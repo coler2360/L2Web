@@ -1,0 +1,43 @@
+html {
+    background-image: url('background.jpg');
+    background-size: 100vw 100vh;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+nav {
+    background-color: blue;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav a {
+    margin: 10% 0px; 
+    background-image: 
+}
+
+section {
+    grid-column: 3/4;
+    height: 80%;
+    background-color: white;
+    align-self: center;
+    overflow-y: scroll;
+}
+
+section img {
+    width: 80%; 
+}

@@ -1,0 +1,88 @@
+  <!doctype html>
+
+  <head>
+
+
+      <title>Goes in Tab</title>
+      <link rel="stylesheet" href="style.css">
+      <script>
+          function testing() {
+              var rand = Math.floor(Math.random() * options.length);
+              document.getElementById('text1').innerHTML = options[rand];
+
+          } //end of button func
+
+      </script>
+  </head>
+
+  <body>
+      <div class="main">
+
+          <nav>
+              <ul>
+                  <li><a href="index.html">Breif</a></li>
+                  <li> <a href="Enemies.html">Enemies</a></li>
+                  <li> <a href="Allies.html">Allies</a></li>
+              </ul>
+          </nav>
+          <section>
+
+              <div class="left">
+                  <h1 id="enemies">Enemies</h1>
+
+                  <img id="crawler" src="Images/crawler.jpg" alt="ff">
+
+
+                  <p id="text1">The crawlers were trapped by a vast cave system but the eruption let them astray upon earth to reek havoc, harmed by sunglight they wait until night and their advances senses of hearing and smell can sniff out any human nearby</p>
+
+                  <button id="button" onclick="imgChanger()">Next Enemy</button>
+
+
+
+
+
+                  <script>
+                      //start of javascript
+
+                      var options = [
+                          "The crawlers were trapped by a vast cave system but the eruption let them astray upon earth to reek havoc, harmed by sunglight they wait until night and their advances senses of hearing and smell can sniff out any human nearby.",
+                          "A skullstalker cannot be described as any human in sees one doesnt live long, a skullstalker is what happens when the venom from a crawler seeps into the veins, the transformation turns you into a bloodthrsty stalker only harmed by dettol.",
+                          "A reaper is said to be the alpha of all the monsters, it can shape shift no one seeing its true form, its existence is only known becuase of the blood curdling howls that rip hrough the night air controlling the skull stalkers and crawlers."
+
+
+                      ];
+
+                      var images = [
+                          "Images/crawler.jpg","Images/reaper.jpg", "Images/spirit.jpg" 
+
+                      ];
+
+                      var i = 0;
+
+                      function imgChanger() {
+                          document.getElementById('crawler').src = images[i];
+                          document.getElementById('text1').innerHTML = options[i];
+                          i++
+                          if (i >= images.length) {
+                              i = 0;
+                          }
+                      }
+
+                  </script>
+
+
+
+
+
+
+
+                  <p id="randon"></p>
+
+
+              </div>
+
+          </section>
+
+      </div>
+
+  </body>

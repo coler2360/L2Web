@@ -1,3 +1,8 @@
+@font-face {
+    font-family: MainFont;
+    src: url(Fonts/hi.ttf);
+}
+
 html {
     background-image: url('background.jpg');
     background-size: 100vw 100vh;
@@ -10,34 +15,140 @@ html {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 5.5fr 1fr;
     grid-template-rows: 100vh;
+
+
 }
 
 nav {
     background-color: blue;
-    height: 100%;
+    height: 74%;
+    width: 60%;
     text-align: center;
     background-color: black;
-    
-    display: flex;
+    background-image: url(Images/woodlong.jpg);
+    background-image: 100%;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 100px;
+
+
 }
 
 nav a {
-    margin: 10% 0px; 
-    background-image: 
+    margin: 10% 0px;
+    font-family: MainFont;
 }
 
 section {
     grid-column: 3/4;
-    height: 80%;
+    height: 64%;
+    width: 73;
     background-color: white;
     align-self: center;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
+    background-image: url(Images/bill2.jpg);
+    background-size: auto;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+
 }
 
 section img {
-    width: 80%; 
+    width: 80%;
 }
+
+
+
+
+
+li a {
+    display: block;
+    color: black;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+    margin: 120px 10px;
+    font-size: 25px;
+}
+
+h1 {
+    margin: 110px 10px 10px 100px;
+    font-family: MainFont;
+    font-size: 40px;
+}
+
+h2 {
+    margin-left: 100px;
+    font-family: MainFont;
+}
+
+p {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: MainFont;
+}
+
+#slideReel {
+    width: 65%;
+    margin-top: 25%;
+    /*    width: 170px;*/
+
+}
+
+#ash {
+
+    width: 35%;
+    margin-top: 4%;
+    margin-left: 12%;
+}
+
+#enemies {
+    margin-left: 13%;
+
+}
+
+#text1 {
+    margin-left: 13%;
+
+}
+
+#button {
+    color: deeppink;
+    width: 10%;
+    height: 10%;
+    margin-left: 13%;
+    border: 2px solid hotpink;
+    margin-top: 3%;
+
+}
+
+#joey {
+    width: 40%;
+    margin-left: 13%;
+}
+
+#crawler {
+    margin-left: 13%;
+    width: 40%;
+}
+
+#spirit {
+        margin-left: 13%;
+    width: 40%;
+}
+
+#dehi{
+       margin-left: 13%;
+    width: 40%;
+}
+
+#noob{
+         margin-left: 13%;
+    width: 40%;
+}
+
+

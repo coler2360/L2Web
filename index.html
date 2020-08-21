@@ -1,27 +1,56 @@
-<!doctype html>
+      <!doctype html>
 
-<head>
-    <title>Goes in Tab</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="code.js"></script>
-</head>
+      <head>
+          <title>Goes in Tab</title>
+          <link rel="stylesheet" href="style.css">
+          <script>
+              setInterval(imgChanger, 2000);
 
-<body>
-    <div class="main">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">Gallery</a>
-            <a href="index.html">Contact</a>
-        </nav>
-    <section>
-        <h1 id="heading">Welcome</h1>
-        <p>hgurhgigiergiuregouergiuh
-        </p>
-        <img src="background.jpg">
-        <img src="background.jpg">
-        <img src="background.jpg">
-    </section>
+              //var imgs = ['images/img'] set list and change file path using array
 
-    </div>
+              var i = 0;
 
-</body>
+
+              function imgChanger() {
+                  var imgPath = 'Images/' + i + '.jpg';
+                  document.getElementById('slideReel').src = imgPath;
+                  i++
+                  if (i > 2); {
+                      i = 0;
+                  }
+              }
+
+          </script>
+      </head>
+
+      <body>
+          <div class="main">
+              <nav>
+                  <ul>
+                      <li><a href="index.html">Breif</a></li>
+                      <li> <a href="Enemies.html">Enemies</a></li>
+                      <li> <a href="Allies.html">Allies</a></li>
+                  </ul>
+              </nav>
+              <section>
+                  <div class="left">
+                      <h1 id="heading">Welcome</h1>
+                      <h2>What's Happened</h2>
+                      <p>
+                          YellowStone has erupted raining fire and ash from the skies, the erupstion was so great all electicity
+                          has been rendered useless and many of the luxuries of the 21st century has become pointless.
+                          The eruption collapsed the earth around the volcanoe caving in a vast cave system allwoing creatures of the dark
+                          to accend to the surface after being freed from imprisonment below the surface.
+                      </p>
+
+
+
+
+                      <img id="ash" src="Images/ash.gif" alt="ff">
+                  </div>
+                  <img id="slideReel" src="Images/1.jpg" alt="ff">>
+              </section>
+
+          </div>
+
+      </body>

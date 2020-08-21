@@ -1,0 +1,88 @@
+<!doctype html>
+
+<head>
+
+
+    <title>Goes in Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function testing() {
+            var rand = Math.floor(Math.random() * options.length);
+            document.getElementById('text1').innerHTML = options[rand];
+
+        } //end of button func
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Breif</a></li>
+                <li> <a href="Enemies.html">Enemies</a></li>
+                <li> <a href="Allies.html">Allies</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <div class="left">
+                <h1 id="enemies">Allies</h1>
+
+                <img id="joey" src="Images/joey.jpg" alt="fe">
+
+
+                <p id="text1">Joey barton will redact any threats shins and promptly ask for a pay rise, he has a big nose making it near impossible to stay hidden from the savages the apocolypse has relaesed from the depths, not the best ally the an ally none the less</p>
+
+                <button id="button" onclick="imgChanger()">Next Ally</button>
+
+
+
+
+
+                <script>
+                    //start of javascript
+
+                    var options = [
+                        "Joey barton will redact any threats shins and promptly ask for a pay rise, he has a big nose making it near impossible to stay hidden from the savages the apocolypse has relaesed from the depths, not the best ally, but  an ally none the less.",
+                        "Will start beef and make you life miserable, however he comes with a lamborghini making travel fast, but his inanbilty to drive without rolling his car into a ditch could make life impracticle, instead of siding with deji if you can side ole Joey",
+                        "Russian cheese man has the ability to sniff out the aroma of cheese within 1 mile making him very useful in the case of not trying to die from starvation, however he will proceed to do TikTok dances throughout your journey making stealth impossible."
+
+
+                    ];
+
+                    var images = [
+                        "Images/joey.jpg", "Images/dehi.jpg", "Images/noob.jpg"
+
+                    ];
+
+                    var i = 0;
+
+                    function imgChanger() {
+                        document.getElementById('joey').src = images[i];
+                        document.getElementById('text1').innerHTML = options[i];
+                        i++
+                        if (i >= images.length) {
+                            i = 0;
+                        }
+                    }
+
+                </script>
+
+
+
+
+
+
+
+                <p id="randon"></p>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
